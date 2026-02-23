@@ -52,7 +52,7 @@ function handleBlockedTweet() {
                     console.error('Erreur lors de l\'envoi de l\'email :', error);
                 });
 
-            // Créer une notification native Chrome
+            // Créer une notification Chrome
             chrome.notifications.create({
                 type: "basic",
                 iconUrl: chrome.runtime.getURL("icons/iconheartshield.png"),
