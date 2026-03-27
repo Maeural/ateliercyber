@@ -14,7 +14,8 @@
     "https://x.com/*",
     "https://discord.com/*",
     "https://www.instagram.com/*",
-    "https://www.reddit.com/*"
+    "https://www.reddit.com/*",
+    "http://localhost:11434/*"
   ],
   "action": {
     "default_popup": "popup.html",

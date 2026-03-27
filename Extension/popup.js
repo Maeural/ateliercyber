@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+ocument.addEventListener('DOMContentLoaded', () => {
     const emailInput = document.getElementById('email');
     const saveBtn = document.getElementById('saveBtn');
     const statusDiv = document.getElementById('status');
