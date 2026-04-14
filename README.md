@@ -29,7 +29,8 @@ Si ce n'est pas déjà fait, téléchargez et installez Ollama sur votre machine
 **[Télécharger Ollama](https://ollama.com/download)**
 
 ### Étape B : Télécharger le modèle d'IA
-1. Téléchargez l'un des modèles (`.gguf`) depuis ces liens Google Drive : 
+1. Téléchargez l'un des modèles (`.gguf`) depuis ces liens Google Drive :
+
    **Lien du modèle générale : https://drive.google.com/file/d/1GKjblHFmy37x1B3fNKqXnigLUiSjAMWl/view?usp=drive_link**
    
    **Lien du modèle centré sur les autochtones mais moins performant au global : https://drive.google.com/file/d/1GQgw-3sMyHqnH-M3V7FiG2CXkHP9TCT-/view?usp=drive_link**
