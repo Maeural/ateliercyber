@@ -62,5 +62,6 @@ Si ce n'est pas déjà fait, téléchargez et installez Ollama sur votre machine
      ```bash
      OLLAMA_ORIGINS="*" ollama serve
      ```
-   Si un message d'erreur s'affiche signifiant qu'Ollama est déjà lancé, fermez ollama via le gestionnaire de tâche et relancer la commande
+   Si un message d'erreur s'affiche signifiant qu'Ollama est déjà lancé, vous pouvez fermer ollama via le gestionnaire de tâche et relancer la commande.
+   
 Maintenant, vous pouvez naviguer les pages web de Discord, X, Reddit, Instagram (seulement pour les Messages Privés) 
