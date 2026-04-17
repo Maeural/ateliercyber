@@ -32,9 +32,29 @@ async function analyzeTextWithOllama(text) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 model: "heartshield-model",
-                prompt: `### Instruction:\nDetermine if the following message contains hateful content. Answer only with 'True' or 'False'.\n\n### Input:\n${text}\n\n### Response:\n`,
+                prompt: `You are a strict content moderation AI. Analyze the message and determine if it contains toxic, hateful, aggressive, insulting, or severely inappropriate content.
+Respond ONLY with the exact word "TRUE" if the message is toxic, or "FALSE" if it is safe. Do not explain.
+
+Message: "Have a great day everyone!"
+Answer: FALSE
+
+Message: "Asshole, shut up."
+Answer: TRUE
+
+Message: "I don't agree with you."
+Answer: FALSE
+
+Message: "Kill yourself."
+Answer: TRUE
+
+Message: "${text}"
+Answer:`,
                 stream: false,
-                keep_alive: -1
+                keep_alive: -1,
+                options: {
+                    num_predict: 5,
+                    temperature: 0.0  // FORCER des réponses strictes, sans blabla
+                }
             })
         });
 
