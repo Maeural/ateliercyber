@@ -3,10 +3,14 @@
 Ce guide vous explique comment installer l'extension sur votre navigateur et comment configurer le modèle d'intelligence artificielle locale avec Ollama.
 
 ---
+## 1. Téléchargement du dépôt
 
-## 1. Installation de l'Extension
+Pour commencer, il faut télécharger le ZIP du code depuis la page GitHub
+
+## 2. Installation de l'Extension
 
 L'extension s'installe directement depuis le dossier source sur n'importe quel navigateur basé sur Chromium (Google Chrome, Microsoft Edge, Brave, etc.).
+**Attention ça ne fonctionne pas sur Firefox**
 
 1. Ouvrez votre navigateur et accédez à la page de gestion des extensions :
    - **Chrome** : Tapez `chrome://extensions/` dans la barre d'adresse.
@@ -20,7 +24,7 @@ L'extension s'installe directement depuis le dossier source sur n'importe quel n
 
 ---
 
-## 2. Configuration d'Ollama (IA Locale)
+## 3. Configuration d'Ollama (IA Locale)
 
 L'extension s'appuie sur un modèle de langage local pour analyser le contenu. Le fichier du modèle (`.gguf`) étant trop lourd pour être stocké sur le dépôt de code (ex: GitHub), il doit être téléchargé via Google Drive.
 
@@ -47,17 +51,9 @@ Si ce n'est pas déjà fait, téléchargez et installez Ollama sur votre machine
    ```bash
    ollama create heartshield-model -f Modelfile
    ```
-4. (Optionnel) Vous pouvez tester que le modèle fonctionne en le lançant en ligne de commande :
-   ```bash
-   ollama run heartshield-model
-   ```
 
 5. Lancez le serveur Ollama en autorisant l'extension à y accéder (CORS) avec la variable `OLLAMA_ORIGINS` :
 
-   - **Sur Windows (Invite de commandes / cmd) :**
-     ```cmd
-     set OLLAMA_ORIGINS="*" && ollama serve
-     ```
    - **Sur Windows (PowerShell) :**
      ```powershell
      $env:OLLAMA_ORIGINS="*"; ollama serve
@@ -66,3 +62,5 @@ Si ce n'est pas déjà fait, téléchargez et installez Ollama sur votre machine
      ```bash
      OLLAMA_ORIGINS="*" ollama serve
      ```
+   Si un message d'erreur s'affiche signifiant qu'Ollama est déjà lancé, fermez ollama via le gestionnaire de tâche et relancer la commande
+Maintenant, vous pouvez naviguer les pages web de Discord, X, Reddit, Instagram (seulement pour les Messages Privés) 
