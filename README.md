@@ -1,7 +1,7 @@
 # Guide d'Installation et de Lancement
 
 Ce guide vous explique comment installer l'extension sur votre navigateur et comment configurer le modèle d'intelligence artificielle locale avec Ollama.
-
+Cela fonctionne UNIQUEMENT avec Windows
 ---
 ## 1. Téléchargement du dépôt
 
@@ -42,7 +42,7 @@ Si ce n'est pas déjà fait, téléchargez et installez Ollama sur votre machine
 *(Assurez-vous que le nom du fichier `.gguf` correspond bien à celui renseigné à l'intérieur du fichier `Modelfile`)*.
 
 ### Étape C : Créer et lancer le modèle
-1. Ouvrez un terminal (Invite de commandes ou PowerShell sur Windows, Terminal sur Mac/Linux).
+1. Ouvrez un terminal (Invite de commandes ou PowerShell).
 2. Déplacez-vous dans le dossier `model` du projet :
    ```bash
    cd "chemin/vers/ateliercyber/model"
@@ -52,16 +52,12 @@ Si ce n'est pas déjà fait, téléchargez et installez Ollama sur votre machine
    ollama create heartshield-model -f Modelfile
    ```
 
-5. Lancez le serveur Ollama en autorisant l'extension à y accéder (CORS) avec la variable `OLLAMA_ORIGINS` :
-
+4. Lancez le serveur Ollama en autorisant l'extension à y accéder (CORS) avec la variable `OLLAMA_ORIGINS` :
    - **Sur Windows (PowerShell) :**
      ```powershell
      $env:OLLAMA_ORIGINS="*"; ollama serve
      ```
-   - **Sur Mac / Linux :**
-     ```bash
-     OLLAMA_ORIGINS="*" ollama serve
-     ```
+
    Si un message d'erreur s'affiche signifiant qu'Ollama est déjà lancé, vous pouvez fermer ollama via le gestionnaire de tâche et relancer la commande.
    
 Maintenant, vous pouvez naviguer les pages web de Discord, X, Reddit, Instagram (seulement pour les Messages Privés) 
