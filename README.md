@@ -1,8 +1,8 @@
 # Guide d'Installation et de Lancement
-
+---
 Ce guide vous explique comment installer l'extension sur votre navigateur et comment configurer le modèle d'intelligence artificielle locale avec Ollama.
 Cela fonctionne UNIQUEMENT avec Windows
----
+
 ## 1. Téléchargement du dépôt
 
 Pour commencer, il faut télécharger le ZIP du code depuis la page GitHub
